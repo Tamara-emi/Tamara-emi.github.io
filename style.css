@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&family=Josefin+Slab&family=Sen&family=Send+Flowers&display=swap');
+::-webkit-scrollbar{
+    width:0; 
+    height: 0;
+    background-color: transparent;
+}
+
+
+.link:current{
+    color:white !important;
+}
+
+html, * {
+    font-family: Overpass, 'Josefin Slab';
+    scroll-behavior: smooth;
+}
+
+/* Copied Code */
+
+.content {
+	background: linear-gradient(-45deg, #32068b, #18e4da);
+	background-size: 400% 400%;
+	animation: gradient 10s ease-in-out infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
+
+
+
+/* End Copied Code */
+.name{
+    font-family: 'Send Flowers';
+    
+}
+
+.welcome{
+    clip-path: circle(66.2% at 48% 39%);
+}
+.tile{
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    width: 300px;
+    background: red;
+    text-align: center;
+}
+
+.tile::after{
+    content: "";
+    width:100px; 
+    margin-left: 40px;
+    height: 2px;
+    background: #000;
+    position: absolute; 
+    left:80px;
+}
+
+.tile::before{
+    content: "";
+    width:10px; 
+    height: 10px;
+    border-radius: 100%;
+    margin-right: 50px;
+    background: #000;
+    position: absolute; 
+    left:0;
+}
